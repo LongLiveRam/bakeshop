@@ -1,0 +1,99 @@
+/* Custom Properties */
+:root{
+  --clr-primary: #894e3f;
+  --clr-secondary: #c37960;
+  --clr-main-bg: #f0d7a7;
+}
+
+/* Reset */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Utilities - to be put to a separate file utilities.css */
+/* Desktop first website responsive design */
+.container{
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* 2xl */
+@media (max-width: 1536px) {
+  .container{
+    max-width: 1280px;
+  }
+}
+/* xl */
+@media (max-width: 1280px){
+  .container{
+    max-width: 1024px;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px){
+  .container{
+    max-width: 768px;
+  }
+}
+
+/* md */
+@media (max-width: 768px){
+  .container{
+    max-width: 640px;
+  }
+}
+
+/* sm */
+@media (max-width: 640px){
+  .container{
+    max-width: 475px;
+  }
+}
+
+/* xs */
+@media (max-width: 475px){
+  .container{
+    max-width: 100%;
+  }
+}
+
+header{
+  background: var(--clr-main-bg);
+  padding: 10px;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1{
+  font-size: 32px;
+  margin-right: 18px;
+  background: linear-gradient(150deg, #a04000,#ec7063 50%, #ffc300);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav ul, 
+nav ul a{
+  list-style-type: none;
+  text-decoration: none;
+  color: var(--clr-primary);
+  font-size: 20px;
+}
+
+.nav-links{
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li:not(:last-child){
+  margin-right: 18px;
+}
